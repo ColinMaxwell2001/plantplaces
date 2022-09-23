@@ -42,7 +42,7 @@ public class PlantPlacesController {
 		return "start";
 	}
 	
-	@RequestMapping(value="/start", method=RequestMethod.GET, params= {"loyalty-silver"})
+	@RequestMapping(value="/start", method=RequestMethod.GET, params= {"loyalty=silver"})
 	public ModelAndView readSilver() {
 		SpecimenDTO specimenDTO = specimenServiceStub.fetchById(43);
 		specimenDTO.setSpecimenId(83);
